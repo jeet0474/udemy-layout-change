@@ -1,0 +1,24 @@
+#__udemy_resize_handle {
+  height: 10px;
+  cursor: row-resize;
+  position: relative;
+  z-index: 999999;
+  background: transparent;
+}
+
+#__udemy_resize_handle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 2px;
+  transform: translateY(-50%);
+  background: #9146ff;
+}
+
+/* FORCE VIDEO AREA TO EXPAND */
+.app--body-container--RJZF2,
+.app--body-container--RJZF2 * {
+  max-height: none !important;
+}
